@@ -8,7 +8,17 @@
 
 import UIKit
 
+
+
+
+
 class ViewController: UIViewController {
+    
+    var questions = ["When did the War of 1812 start?",
+                     "The White House is what color?",
+                     "The alphabet starts with this letter:"]
+    
+    
 //variables for every piece of text that is going to change - labels and buttons
     
     @IBOutlet weak var question: UILabel!
@@ -32,6 +42,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       question.text = questions[0]
+        
 
     }
 
