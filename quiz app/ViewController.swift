@@ -18,6 +18,7 @@ class ViewController: UIViewController {
                      "The White House is what color?",
                      "The alphabet starts with this letter:"]
     
+    var answers = [["2034", "1812", "1912"], ["White", "Six", "Magenta"], ["The alphabet", "a dog", "A"]]
     
 //variables for every piece of text that is going to change - labels and buttons
     
@@ -43,7 +44,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        question.text = questions[0]
-        
+        button1.setTitle(answers[0][0], for: .normal)
+        button2.setTitle(answers[0][1], for: .normal)
+        button3.setTitle(answers[0][2], for: .normal)
 
     }
 
