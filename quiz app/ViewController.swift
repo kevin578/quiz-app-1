@@ -43,11 +43,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       question.text = questions[0]
-        button1.setTitle(answers[0][0], for: .normal)
-        button2.setTitle(answers[0][1], for: .normal)
-        button3.setTitle(answers[0][2], for: .normal)
+        displayQuestion(questionNumber: 0)
 
+    }
+    
+    func displayQuestion(questionNumber: Int) {
+        question.text = questions[questionNumber]
+        button1.setTitle(answers[questionNumber][0], for: .normal)
+        button2.setTitle(answers[questionNumber][1], for: .normal)
+        button3.setTitle(answers[questionNumber][2], for: .normal)
     }
 
 
