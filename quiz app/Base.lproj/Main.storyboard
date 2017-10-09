@@ -77,6 +77,18 @@
                                     <action selector="button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ibh-MW-mh8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GM-aA-RV3">
+                                <rect key="frame" x="317" y="427" width="200" height="88"/>
+                                <color key="backgroundColor" red="1" green="0.40424407745428448" blue="0.27998583923945553" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="HKW-iJ-RGf"/>
+                                    <constraint firstAttribute="width" constant="200" id="I8y-zl-C2a"/>
+                                </constraints>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBV-1D-YfL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -84,6 +96,7 @@
                             <constraint firstItem="CbR-We-GeF" firstAttribute="top" secondItem="k3F-G2-u5P" secondAttribute="bottom" constant="98" id="EmH-3B-nk3"/>
                             <constraint firstItem="Mko-cn-qoE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPf-Bk-Ndr"/>
                             <constraint firstItem="CbR-We-GeF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="haZ-Vd-A5I"/>
+                            <constraint firstItem="7GM-aA-RV3" firstAttribute="top" secondItem="CbR-We-GeF" secondAttribute="bottom" constant="105" id="jc8-WZ-cLK"/>
                             <constraint firstItem="k3F-G2-u5P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="63" id="kMz-7Y-wZZ"/>
                             <constraint firstItem="CbR-We-GeF" firstAttribute="top" secondItem="k3F-G2-u5P" secondAttribute="bottom" constant="98" id="kd2-1E-fpM"/>
                             <constraint firstItem="2hl-zs-gZY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ohi-lw-E9S"/>
@@ -91,6 +104,7 @@
                             <constraint firstItem="Mko-cn-qoE" firstAttribute="top" secondItem="CbR-We-GeF" secondAttribute="bottom" constant="34" id="soS-Wd-y2v"/>
                             <constraint firstItem="Iwx-GX-PbD" firstAttribute="top" secondItem="2hl-zs-gZY" secondAttribute="bottom" constant="52" id="tmL-Nx-frl"/>
                             <constraint firstItem="k3F-G2-u5P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vOD-aU-cVw"/>
+                            <constraint firstItem="7GM-aA-RV3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vOZ-z9-1ay"/>
                             <constraint firstItem="Iwx-GX-PbD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w0F-uo-r1a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -99,6 +113,7 @@
                         <outlet property="button1" destination="Mko-cn-qoE" id="o9O-5l-P1e"/>
                         <outlet property="button2" destination="2hl-zs-gZY" id="juk-1s-KpP"/>
                         <outlet property="button3" destination="Iwx-GX-PbD" id="Ssy-Ab-RjX"/>
+                        <outlet property="nextQuestion" destination="7GM-aA-RV3" id="KpM-51-eeB"/>
                         <outlet property="question" destination="CbR-We-GeF" id="vW4-SH-7AB"/>
                     </connections>
                 </viewController>
